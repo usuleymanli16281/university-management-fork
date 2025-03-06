@@ -1,9 +1,9 @@
 package model;
 
-import java.util.ArrayList;
-
-import model.person.Student;
 import model.person.Faculty;
+import model.person.Student;
+
+import java.util.ArrayList;
 
 public class Course {
     private String title;
@@ -47,7 +47,6 @@ public class Course {
     public void setPrerequisiteCourses(ArrayList<Course> prerequisites) { this.prerequisites = prerequisites; }
     public void setStudents(ArrayList<Student> students) { this.students = students; }
     public void setTeacher(Faculty teacher) { this.teacher = teacher; }
-
 
     @Override
     public String toString() {

@@ -46,25 +46,6 @@ public class Student extends Person {
     public void setInternshipCompleted(boolean internshipCompleted) { this.internshipCompleted = internshipCompleted; }
     public void setTA(boolean TA) { this.TA = TA; }
 
-    public boolean addCourse(Course course) {
-        if (course != null) {
-            courses.add(course);
-            return true;
-        }
-        return false;
-    }
-
-    // Can be moved to StudentService.java
-    public boolean withdrawFromCourse(int courseId) {
-        return courses.removeIf(course -> course.getCourseCode() == courseId);
-    }
-
-    public double getCGPA() {
-        double sum = 0;
-        for (double GPA : this.GPAs) { sum += GPA; }
-        return sum / this.GPAs.size();
-    }
-
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Student{")
