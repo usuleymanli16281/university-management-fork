@@ -7,11 +7,13 @@ import model.Course;
 public class StudentService {
 
     public boolean addCourse(Student student, Course course) {
-        if (course != null) {
-            student.getCourses().add(course);
-            return true;
-        }
-        return false;
+        if(course == null)
+            return false;
+        if(!course.getPrerequisites().containsAll(student.getCourses())) 
+            return false;
+        student.getCourses().add(course);
+        return true;
+
     }
 
     public boolean withdrawFromCourse(Student student, int courseId) {
