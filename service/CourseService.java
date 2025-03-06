@@ -62,11 +62,4 @@ public class CourseService {
         }
     }
 
-    public double calculateAverageCredits(Course course) {
-        if (course != null) {
-            ArrayList<Student> students = course.getStudents();
-            return students.size() > 0 ? (double) course.getCredits() * students.size() / students.size() : 0;
-        }
-        return 0;
-    }
 }
