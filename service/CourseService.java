@@ -1,8 +1,8 @@
 package service;
 
 import model.Course;
-import model.person.Student;
 import model.person.Faculty;
+import model.person.Student;
 
 import java.util.ArrayList;
 

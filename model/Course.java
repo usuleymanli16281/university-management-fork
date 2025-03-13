@@ -1,9 +1,9 @@
 package model;
 
+import java.util.ArrayList;
+
 import model.person.Faculty;
 import model.person.Student;
-
-import java.util.ArrayList;
 
 public class Course {
     private String title;

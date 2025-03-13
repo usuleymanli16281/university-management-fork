@@ -1,10 +1,9 @@
 package service;
 
-import model.person.Student;
-
 import java.util.ArrayList;
 
 import model.Course;
+import model.person.Student;
 
 
 public class StudentService {
